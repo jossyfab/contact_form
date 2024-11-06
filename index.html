@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="header">
+        <a href="#" class="logo">
+          <img src="Arsenal.png" alt="Arsenal" width="150px" height="100px">
+        </a>
+        <h1 class="title">Person Information</h1>
+      </div> 
+      <form id="form">
+        <div class="name-inputs">
+          <div class="form-group">
+            <label for="first name">First Name <span>*</span></label> 
+            <input type="text" placeholder="FirstName" id="first-name">
+            <span class="error hidden">This field is required</span>
+          </div>
+          <div class="form-group">
+            <label for="middle name">Middle Name <span>*</span></label> 
+            <input type="text" placeholder="MiddleName" id="middle-name" >
+            <span class="error hidden">This field is required</span>
+          </div>
+          <div class="form-group">
+            <label for="last name">Last Name <span>*</span></label> 
+            <input type="text" placeholder="LastName" id="last-name" >
+            <span class="error hidden">This field is required</span>
+          </div>
+        </div>
+        <div class="date">
+          <div class="form-group">
+            <label for="DOB">Date of Birth <span>*</span></label>
+            <input type="date" id="dob">
+            <span class="error hidden">This field is required</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone<span>*</span></label>
+            <input type="phone" placeholder="phone" id="phone">
+            <span class="error hidden">This field is required</span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Address <span>*</span></label>
+          <input type="text" placeholder="Street Address" id="address">
+          <span class="error hidden">This field is required</span>
+          </div>
+        <div class="form-group">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" placeholder="Email" id="email">
+          <span class="error hidden">This field is required</span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span>*</span></label>
+          <textarea placeholder="Comments" id="message" row="5"></textarea>
+          <span class="error hidden">This field is required</span>
+        </div>
+        <div class="form-group checkbox">
+            <input type="checkbox"  id="consent">
+            <label for="consent" id="consent">i consent to being contacted by the team <span class="star">*</span></label>
+            <span class="error hidden">This field is required</span>
+          <span class="error hidden">To submit this form,please consent to being contacted</span>  
+        </div> 
+        <button type="submit" class="btn">submit</button>
+      </form>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
